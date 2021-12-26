@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-black);
+}
+
+/* navbar styling */
+#navbar {
+  padding: 15px 20px;
+}
+
+/* main styling */
+main {
+  background: #f6f6f6;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .wrapper {
+  background: #ffffff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'] {
+  flex-grow: 2;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 5px;
+}
+
+#search-btn {
+  padding: 7px 12px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.weather-data {
+  margin-top: 30px;
+}
+
+.hide {
+  display: none;
+}
+.weather-data p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#degree {
+  font-size: 4rem;
+}
+
+.params-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.params-grid .item {
+  background: #eee;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.params-grid p {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.params-grid .value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* footer styling */
+footer {
+  padding: 10px 20px;
+  text-align: center;
+}
