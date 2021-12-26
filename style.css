@@ -112,4 +112,16 @@ footer {
   main {
     background: #fff;
   }
+
+  #degree {
+    font-size: 3rem;
+  }
+
+  .params-grid p {
+    font-size: 12px;
+  }
+
+  .params-grid .value {
+    font-size: 16px;
+  }
 }
