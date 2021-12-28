@@ -7,61 +7,58 @@
   font-family: 'Poppins', sans-serif;
 }
 
-button {
-  cursor: pointer;
-}
-
-.container {
-  max-width: 1024px;
+body {
   height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  color: var(--color-text-black);
-}
-
-/* navbar styling */
-#navbar {
-  padding: 15px 20px;
-}
-
-/* main styling */
-main {
-  background: #f6f6f6;
-  flex-grow: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .wrapper {
-  background: #ffffff;
+#navbar {
+  padding: 10px;
+  background: #0891b2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar label {
+  font-size: 10px;
+}
+
+main {
   width: 400px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 4px;
 }
 
 form {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 input[type='text'] {
-  flex-grow: 2;
-  padding: 5px 10px;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #0891b2;
   border-radius: 4px;
   outline: none;
-  border: 1px solid #333;
-  margin-right: 5px;
+  flex-grow: 1;
 }
 
-#search-btn {
-  padding: 7px 12px;
-  border: none;
-  background: #333;
+button {
+  cursor: pointer;
+  outline: none;
+  background: #0891b2;
   color: #fff;
+  border: 1px solid #0891b2;
   border-radius: 4px;
+  padding: 5px;
 }
 
 .weather-data {
@@ -71,6 +68,7 @@ input[type='text'] {
 .hide {
   display: none;
 }
+
 .weather-data p {
   font-size: 16px;
   font-weight: bold;
@@ -88,7 +86,7 @@ input[type='text'] {
 }
 
 .params-grid .item {
-  background: #eee;
+  background: #dfeaec;
   padding: 10px;
   border-radius: 4px;
 }
@@ -103,15 +101,27 @@ input[type='text'] {
   font-weight: 600;
 }
 
-/* footer styling */
-footer {
-  padding: 10px 20px;
-  text-align: center;
+#degree,
+#feels-like,
+#humidity,
+#pressure,
+#wind-speed {
+  color: #0891b2;
 }
 
 @media (max-width: 500px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #navbar {
+    position: relative;
+  }
+
   main {
-    background: #fff;
+    padding-top: 40px;
+    width: 100%;
   }
 
   #degree {

@@ -13,64 +13,56 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <!-- Navbar -->
-      <nav id="navbar">
-        <h2 id="logo">❄️météo</h2>
-      </nav>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <h2 id="logo">❄️météo</h2>
+      <label>with ❤️ by Veeren</label>
+    </nav>
 
-      <!-- Main section -->
-      <main>
-        <div class="wrapper">
-          <!-- Search filed -->
-          <form>
-            <input type="text" id="input-text" placeholder="Search city" />
-            <button id="search-btn">Search</button>
-          </form>
+    <!-- Main -->
+    <main>
+      <!-- Form Section -->
+      <section class="form">
+        <form>
+          <input type="text" id="input-text" placeholder="Search city" />
+          <button id="search-btn">Search</button>
+        </form>
+      </section>
 
-          <div class="weather-data hide">
-            <p><span id="time-period">Good morning</span>, It's currently</p>
+      <section class="weather-data hide">
+        <p><span id="time-period">Good morning</span>, It's currently</p>
+        <p>
+          <span id="degree">30</span> &deg;C in <span id="city">London</span>,
+          <span id="country">UK</span>
+        </p>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+        <p>
+          <span id="description">Broken clouds</span>.
+          <span id="main">Clear sky</span>
+        </p>
+
+        <div class="params-grid">
+          <div class="item">
             <p>
-              <span id="degree">30</span> &deg;C in
-              <span id="city">London</span>, <span id="country">UK</span>
+              FEELS LIKE:
+              <span class="value" id="feels-like">28</span> &deg;C
             </p>
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+          </div>
+          <div class="item">
+            <p>HUMIDITY: <span class="value" id="humidity">100</span> %</p>
+          </div>
+          <div class="item">
+            <p>PRESSURE: <span class="value" id="pressure">100</span> hPa</p>
+          </div>
+          <div class="item">
             <p>
-              <span id="description">Broken clouds</span>.
-              <span id="main">Clear sky</span>
+              WIND SPEED:
+              <span class="value" id="wind-speed">1.5</span> m/s
             </p>
-
-            <div class="params-grid">
-              <div class="item">
-                <p>
-                  FEELS LIKE:
-                  <span class="value" id="feels-like">28</span> &deg;C
-                </p>
-              </div>
-              <div class="item">
-                <p>HUMIDITY: <span class="value" id="humidity">100</span> %</p>
-              </div>
-              <div class="item">
-                <p>
-                  PRESSURE: <span class="value" id="pressure">100</span> hPa
-                </p>
-              </div>
-              <div class="item">
-                <p>
-                  WIND SPEED:
-                  <span class="value" id="wind-speed">1.5</span> m/s
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-      </main>
-
-      <!-- Footer section -->
-      <footer>
-        <p>Made with ❤️ by Veeren</p>
-      </footer>
-    </div>
+      </section>
+    </main>
   </body>
 
   <script
